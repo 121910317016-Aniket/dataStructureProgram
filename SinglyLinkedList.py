@@ -162,7 +162,7 @@ while True:
     print("4->traversal ")
     print('5->insertion At tail ')
     print('6->insertion At given Position ')
-    print('7->Insertion After Position ')
+    print('7->Insertion After key ')
     print('8->insertion at key ')
     print('9->deletion At tail ')
     print('10->deletion at key ')
