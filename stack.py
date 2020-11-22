@@ -1,7 +1,20 @@
-#B-17
-#Roll_no-16
-#Aniket_kumar
-#singly_linked_list
+"""B-17
+Roll no-16
+Aniket kumar
+stack implementation
+"""
+"""Stack is a linear data structure which follows a particular order in which the operations are performed.
+   The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+   stack can be implemented either by list or linked list
+   
+  Application of stack are:-
+
+  1) Stacks can be used for expression evaluation.
+  2) Stacks can be used to check parenthesis matching in an expression.
+  3) Stacks can be used for Conversion from one form of expression to another.
+  4) Stacks can be used for Memory Management.
+  5) Stack data structures are used in backtracking problems.
+"""
 class stack:
     def __init__(self,limit):
         self.stack = []
