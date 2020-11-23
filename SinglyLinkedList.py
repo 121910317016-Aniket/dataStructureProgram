@@ -133,6 +133,8 @@ class LinkedList:
     def deletionAtPos(self,pos):
         if self.start is None:
             print('list is empty ')
+        elif pos==1:
+            self.start=self.start.next
         else:
             temp=self.start
             prev=self.start
