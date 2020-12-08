@@ -8,6 +8,7 @@ class MaxHeap:
             parent=int((i-1)/2)
             if self.heap[parent]<self.heap[i]:
                 self.heap[parent],self.heap[i]=self.heap[i],self.heap[parent]
+                i=parent
             else:
                 return
 
@@ -37,10 +38,12 @@ class MaxHeap:
                 else:
                     return
             else:
-                if self.heap[left]>self.heap[right]:
+                if self.heap[left] > self.heap[right] and self.heap[left] > self.heap[i]:
                     self.heap[left], self.heap[i] = self.heap[i], self.heap[left]
-                elif self.heap[right]>self.heap[left]:
+                    i = left
+                elif self.heap[right] > self.heap[left] and self.heap[right] > self.heap[i]:
                     self.heap[right], self.heap[i] = self.heap[i], self.heap[right]
+                    i = right
                 else:
                     return
 
@@ -52,6 +55,5 @@ h=MaxHeap()
 h.insertion(32)
 h.insertion(31)
 h.insertion(43)
-h.delete()
-h.delete()
+h.insertion(76)
 h.view()
