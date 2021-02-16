@@ -4,7 +4,7 @@ def partition(mylist,lb,ub):
     end=ub
     while start<end:
         while mylist[start]<=pivot:
-            start-=1
+            start+=1
         while mylist[end]>pivot:
             end-=1
         if start<end:
