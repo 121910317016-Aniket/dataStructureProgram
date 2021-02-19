@@ -6,8 +6,7 @@ class itemValue:
     def __lt__(self, other):
         return self.pw<other.pw
 class GreedyKnapSackProblem:
-    @staticmethod
-    def getMaxValue(weight,profit,capacity):
+    def getMaxValue(self,weight,profit,capacity):
         ival=[]
         for i in range(len(weight)):
             ival.append(itemValue(weight[i],profit[i]))
@@ -22,7 +21,6 @@ class GreedyKnapSackProblem:
             else:
                 fraction=capacity/curwt
                 totalValue+=curval*fraction
-                capacity = int(capacity - (curwt * fraction))
                 break
         return totalValue
 knapsack=GreedyKnapSackProblem()
