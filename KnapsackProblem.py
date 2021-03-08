@@ -24,8 +24,8 @@ class GreedyKnapSackProblem:
                 break
         return totalValue
 knapsack=GreedyKnapSackProblem()
-weight=[10, 40, 20, 30]
-profit=[60, 40, 100, 120]
+weight=[10,20,30]
+profit=[60,100,120]
 capacity = 50
 maxValue=knapsack.getMaxValue(weight,profit,capacity)
 print("Maximum value in Knapsack =", maxValue)
