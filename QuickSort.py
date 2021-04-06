@@ -2,13 +2,15 @@ def partition(mylist,lb,ub):
     pivot = mylist[lb]
     start=lb
     end=ub
-    while start<end:
+    while True:
         while mylist[start]<=pivot:
             start+=1
         while mylist[end]>pivot:
             end-=1
-        if start<end:
+        if start<=end:
             mylist[start],mylist[end]=mylist[end],mylist[start]
+        else:
+            break
     mylist[lb],mylist[end]=mylist[end],mylist[lb]
     return end
 def QuickSort(mylist,lb,ub):

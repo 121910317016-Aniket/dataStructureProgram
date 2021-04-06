@@ -11,6 +11,8 @@ class GreedyKnapSackProblem:
         for i in range(len(weight)):
             ival.append(itemValue(weight[i],profit[i]))
         ival.sort(reverse=True)
+        #for i in ival:
+         #   print("profit {} weight {} pw {}".format(i.profit,i.weight,i.pw))
         totalValue = 0
         for i in ival:
             curwt=i.weight
